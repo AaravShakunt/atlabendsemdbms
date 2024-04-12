@@ -4,7 +4,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,21 +12,32 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private EditText editTextName, editTextPhone;
     private Button buttonAdd;
-    private ListView listViewContacts;
-    private ArrayAdapter<String> adapter;
+    private ListView listViewContacts, listViewContacts2;
+    private ArrayAdapter<String> adapter, adapter2;
     private DatabaseHandler db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        String[] items = {"Banana", "Lime"};
+//        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
+//                android.R.layout.simple_list_item_1, android.R.id.text1, items);
+//
+//        listViewContacts2 = findViewById(R.id.listViewContacts2);
+//
+//        listViewContacts2.setAdapter(adapter2);
+
+
+
 
         editTextName = findViewById(R.id.editTextName);
         editTextPhone = findViewById(R.id.editTextPhone);
